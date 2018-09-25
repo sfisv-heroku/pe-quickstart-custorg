@@ -1,0 +1,1 @@
+ Id batchJobId = Database.executeBatch(new PlatformEventBatch('select id, title from contact'), 60);

@@ -1,0 +1,17 @@
+// Get client id (will be substituted in file before executing)
+String custClientId = 'CUST_CLIENT_ID';
+
+// Define credentials to login to business org
+String bizOrgUrl = 'https://na53.salesforce.com';  //'BIZ_URL';
+String bizOrgUsername = 'BIZ_USERNAME';
+String bizOrgPassword = 'BIZ_PASSWORD';
+String bizClientId = 'BIZ_CLIENT_ID';
+String bizClientSecret = 'BIZ_CLIENT_SECRET';
+
+// Create and initialize helper, and use it to login to Business org
+RegisterOrgHelper helper = new RegisterOrgHelper();
+RegisterOrgHelper.AuthInput input = new RegisterOrgHelper.AuthInput(bizOrgUsername, bizOrgPassword, bizClientId, bizClientSecret);  
+helper.initializeAndLogin(bizOrgUrl, input);
+
+// Call to isv business org to register the customer org info
+helper.registerWithBusinessOrg(UserInfo.getUserName(), custClientId);
