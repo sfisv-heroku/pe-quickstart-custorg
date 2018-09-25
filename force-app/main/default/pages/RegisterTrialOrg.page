@@ -1,0 +1,17 @@
+<apex:page controller="RegisterOrgController">
+    <apex:form >
+
+      <apex:outputPanel id="msg">
+        <apex:pageMessages />
+      </apex:outputPanel>
+
+      <apex:pageBlock >
+        <apex:pageBlockSection columns="1">
+            <apex:pageBlockSectionItem >
+                <apex:commandButton value="Register Org" action="{!registerOrg}" reRender="msg"/>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+      </apex:pageBlock>
+
+    </apex:form>
+</apex:page>

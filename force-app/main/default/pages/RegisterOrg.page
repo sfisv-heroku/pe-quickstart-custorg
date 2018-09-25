@@ -1,0 +1,29 @@
+<apex:page controller="RegisterOrgController">
+
+    <apex:sectionHeader title="Register Your Org" subtitle="For use with the Heroku Platform Event Package" help="http://"></apex:sectionHeader>
+
+    <apex:form >
+  
+        <apex:outputPanel id="msg">
+            <apex:pageMessages />
+        </apex:outputPanel>
+        
+        <apex:pageBlock mode="edit" id="block" >
+            <apex:pageBlockSection title="Org Information">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel for="clientIdInput">Client Id</apex:outputLabel>             
+                    <apex:inputText value="{!custClientId}"  id="clientIdInput"/>                
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel for="usernameInput">Username (if not current)</apex:outputLabel>             
+                    <apex:inputText value="{!custUsername}"  id="usernameInput"/>                
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Register Org" action="{!registerOrg}" reRender="msg"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    
+  </apex:form>
+  
+</apex:page>

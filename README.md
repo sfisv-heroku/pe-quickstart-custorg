@@ -48,6 +48,8 @@ This is the recommended installation option for developers who want to experienc
     cd pe-quickstart-custorg
     ```
 
+1.  Modify the .env file to enter your business org credentials
+
 1.  Create a scratch org, push the app, and open the org:
 
     ```
@@ -62,27 +64,32 @@ This is the recommended installation option for developers who want to experienc
 
 1. Set the Welcome Lightning Page to be the default home page
     
-    1.1 Go to Lightning App Builder from Setup and click Edit on the Welcome page
+    1. Go to Lightning App Builder from Setup and click Edit on the Welcome page
     
-    1.1 Click on Activate, select the Profiles to set it for (or all), and click Save
+    2. Click on Activate, select the Profiles to set it for (or all), and click Save
 
 1.  Register the newly created Customer Org with it's ClientId
 
-    1.1 Go to App Manager, Select **Platform Events Example** in the App list and click "View".
+    1. Go to App Manager, Select **Platform Events Example** in the App list and click "View".
 
-    1.1 Copy the Consumer Key field
+    2. Copy the Consumer Key field
 
-    1.1.1 Use script to register
+    3. Use script to register
     ```
     ./scripts/registerOrg.sh <clientId>
     ```
-    1.1.1 Use Visualforce page to register
+    4. Use Visualforce page to register
 
     Click **Home** to get to the Welcome page and scroll down to get to the Register section, andter the ClientId and click "Register
 
 1. Begin generating events
 
     Click **Home** to get to the Welcome page and click **Create Events" button to begin generating events (Optional: Change the # of events first)
+
+1.  Modify the protected custom metadata (optional, but required for package installation)
+    ```
+    ./scripts/setCustomMetadata.sh <clientId>
+    ```
 
 ### Installing Heroku Platform Events Quick Start Customer Org using an unlocked package
 
@@ -103,4 +110,7 @@ This is the recommended option for non developers. Use this option if you want t
 
 ## Additional Resources
 
-Install the [Platform Events Example Heroku App](https://github.com/pe-example-heroku) app to experiment with platform event-based integration.
+Git repositories for the other, related, components
+* https://github.com/sfisv-heroku/pe-quickstart-bizorg
+* https://github.com/sfisv-heroku/pe-quickstart-dispatcher
+* https://github.com/sfisv-heroku/pe-quickstart-worker

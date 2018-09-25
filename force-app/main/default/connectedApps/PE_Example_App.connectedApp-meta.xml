@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>faysdev@gmail.com</contactEmail>
+    <label>Heroku PE Example App</label>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com/services/oauth2/callback</callbackUrl>
+        <certificate>MIIDczCCAlugAwIBAgIENRE4JTANBgkqhkiG9w0BAQsFADBqMQswCQYDVQQGEwJVUzELMAkGA1UECBMCV0kxEDAOBgNVBAcTB01hZGlzb24xGDAWBgNVBAoTD1NhbGVzZm9yY2UsIEluYzEOMAwGA1UECxMFSVNWVEUxEjAQBgNVBAMTCUFsZXggV29uZzAeFw0xODA0MDUwMjE1NDVaFw0xODA3MDQwMjE1NDVaMGoxCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJXSTEQMA4GA1UEBxMHTWFkaXNvbjEYMBYGA1UEChMPU2FsZXNmb3JjZSwgSW5jMQ4wDAYDVQQLEwVJU1ZURTESMBAGA1UEAxMJQWxleCBXb25nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk7aN5jMXihjIJbdSz7btMFlFg8AKBHBDnGMxvxWT+LwoXKuMProcVLQ3NXzP4ywbxcilGz/PfZBa1m5/rajC4x6XyyPwKtrGF6W2WCE+7Fj36VdwdHd+CAJwGeL2mQtOo+FKXUceEU/b0jSp8tmoLx/MEOONPzpbvta86JnImrdShUpGldsad6K7Eh9EED7vqq5eGsZNuoA4EJTEFsbfuffWSwzKXn4lEhFpwB81i9aVtXmMkECUVgDYxQC2n28frK2VEnmP9aQsjQ+6nu/+Erq3cSd+hZcAxFeWTdU7JLac+37zwclNf0OwI49B+oKSGs1ck4KmqfzUP36IP8V6tQIDAQABoyEwHzAdBgNVHQ4EFgQUz5LpT6pYpge/oQUyOfHERPuh5fwwDQYJKoZIhvcNAQELBQADggEBAG3KQyxAEoiyFtEQQKVjDcmt7M+RFToQ8zKaVuZhtQw78X8qy/BnquBM4v12dQ1nhnzdJEEn7kRZXRyS+l9EgTbGUIRGhqWnXao3soKWX2qNNWV6T07ObZnQQG28vYXOzt1+TxHfb4RrM5URVPmQowmv7RFfqvOAhX9hFw6pXykFWEsZd1tl1WGV0VjyePwjP5V8lydz8P6dNxtdK1CJRnBDUL4+KSldprusIkq09rFSv87OC7FmmUDnt+6tsKIh5wJkDvEnDfJVlRRQD9j8VFXP2cfvlh2p/AHLtO+2K+dRje8kHkocjOZ90gnG4+E/1PiXJB/99q0w5pIlREcUyM8=</certificate>
+        <scopes>Api</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+</ConnectedApp>
