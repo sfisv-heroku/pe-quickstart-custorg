@@ -70,13 +70,13 @@ This is the recommended installation option for developers who want to experienc
 
     1. Go to App Manager, Select **Heroku PE Example App** in the App list and click "View".
 
-    2. Copy the Consumer Key field
+    2. Copy the Consumer Key field and either:
 
-    3. Use script to register
-    ```
-    ./scripts/registerOrg.sh <clientId>
-    ```
-    4. Use Visualforce page to register
+        1. Use script to register
+        ```
+        ./scripts/registerOrg.sh <clientId>
+        ```
+        2. Use Visualforce page to register
 
     Click **Home** to get to the Welcome page and scroll down to get to the Register section, andter the ClientId and click "Register
 
