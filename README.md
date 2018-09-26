@@ -1,7 +1,7 @@
 # Heroku + Platform Events Quick Start for Salesforce ISV's
 # Customer Org Component
 
-This example is to demonstrate and serve as a quick start for how large-scale processing can be moved from Salesforce to Heroku.  It consists of four components:
+This example is to demonstrate and serve as a quick start for how large-scale processing can be moved from Salesforce to Heroku.  It consists of four components, each with its own git repository:
 
 1. [Customer org](https://github.com/sfisv-heroku/pe-quickstart-custorg): A Salesforce application that generates Platform Events
 1. [Listener](https://github.com/sfisv-heroku/pe-quickstart-listener): A Heroku application that consumes events and dispatches them to the worker
@@ -14,7 +14,7 @@ This is an experimental project, which means that:
 1. We need your feedback
 1. Code contributions are welcome
 
-For more information, please go to the Salesforce Partner Community and view the ["Heroku for ISV's - Quick Start" Chatter Group] (https://sfdc.co/herokuisvquickstart "https://sfdc.co/herokuisvquickstart")
+For more information, please go to the Salesforce Partner Community and view the ["Heroku for ISV's - Quick Start" Chatter Group](https://sfdc.co/herokuisvquickstart "https://sfdc.co/herokuisvquickstart")
 
 ## Table of Contents
 
