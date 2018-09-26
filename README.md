@@ -78,7 +78,7 @@ This is the recommended installation option for developers who want to experienc
         ```
         2. Use Visualforce page to register
 
-    Click **Home** to get to the Welcome page and scroll down to get to the Register section, andter the ClientId and click "Register
+        Click **Home** to get to the Welcome page and scroll down to get to the Register section, andter the ClientId and click "Register
 
 1. Begin generating events
 
