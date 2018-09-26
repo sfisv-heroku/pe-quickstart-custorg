@@ -3,10 +3,10 @@
 
 This example is to demonstrate and serve as a quick start for how large-scale processing can be moved from Salesforce to Heroku.  It consists of four components, each with its own git repository:
 
-1. [Customer org](https://github.com/sfisv-heroku/pe-quickstart-custorg): A Salesforce application that generates Platform Events
+1. [Business org](https://github.com/sfisv-heroku/pe-quickstart-bizorg): A Salesforce application that keeps track of the activity happening in the Customer org and on Heroku
+1. [Customer org](https://github.com/sfisv-heroku/pe-quickstart-custorg) (this project): A Salesforce application that generates Platform Events
 1. [Listener](https://github.com/sfisv-heroku/pe-quickstart-listener): A Heroku application that consumes events and dispatches them to the worker
 1. [Worker](https://github.com/sfisv-heroku/pe-quickstart-worker): A Heroku application that receives work from the listener and performs processing on data retrieved from the Customer org
-1. [Business org](https://github.com/sfisv-heroku/pe-quickstart-bizorg): A Salesforce application that keeps track of the activity happening in the Customer org and on Heroku
 
 This is an experimental project, which means that:
 
@@ -19,8 +19,8 @@ For more information, please go to the Salesforce Partner Community and view the
 ## Table of Contents
 
 *   Installation
-    *   [Installing Heroku Platform Events Quick Start Customer Org using Salesforce DX](#installing-heroku-pe-example-custorg-using-salesforce-dx)
-    *   [Installing Heroku Platform Events Quick Start Customer Org using an unlocked package](#installing-pe-example-custorg-using-an-unlocked-package)
+    *   [Installing Heroku Platform Events Quick Start Customer Org using Salesforce DX](#installing-heroku-pe-quickstart-custorg-using-salesforce-dx)
+    *   [Installing Heroku Platform Events Quick Start Customer Org using an unlocked package](#installing-pe-quickstart-custorg-using-an-unlocked-package)
 
 ## Installation
 
@@ -33,7 +33,7 @@ There are two ways to install the Heroku Platform Events Quick Start Customer Or
 
 This is the recommended installation option for developers who want to experience the app and the code.
 
-1.  Authenticate with your hub org (if not already done):
+1.  Authenticate with your SFDX hub org (if not already done):
 
     ```
     sfdx force:auth:web:login -d -a myhuborg
@@ -56,7 +56,7 @@ This is the recommended installation option for developers who want to experienc
 
 1.  Change the access policy to permit access to the Connected App
 
-    1. Select **Platform Event App** in the App list and click "Edit"
+    1. Select **Heroku PE Example App** in the App list and click "Edit"
 
     2. Change the "Permitted Users" setting to "Admin approved users are pre-authorized" and click Save.
 
@@ -68,7 +68,7 @@ This is the recommended installation option for developers who want to experienc
 
 1.  Register the newly created Customer Org with it's ClientId
 
-    1. Go to App Manager, Select **Platform Events Example** in the App list and click "View".
+    1. Go to App Manager, Select **Heroku PE Example App** in the App list and click "View".
 
     2. Copy the Consumer Key field
 
@@ -97,7 +97,7 @@ This is the recommended option for non developers. Use this option if you want t
 
 1.  Enable My Domain. Follow the instructions to enable My Domain [here](https://trailhead.salesforce.com/projects/quickstart-lightning-components/steps/quickstart-lightning-components1).
 
-1.  Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=xxx) to install the Platform Events Example App unlocked package into your developer edition org.
+1.  Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0b000001qKFZ) to install the Platform Events Example App unlocked package into your developer edition org.
 
 1.  Select **Install for All Users**. When prompted, make sure you grant access to the external sites (api.einstein.ai).
 
