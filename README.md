@@ -1,12 +1,12 @@
 # Heroku + Platform Events Quick Start for Salesforce ISV's
 # Customer Org Component
 
-This example is to demonstrate how large-scale processing can be moved from Salesforce to Heroku.  It consists of four components:
+This example is to demonstrate and serve as a quick start for how large-scale processing can be moved from Salesforce to Heroku.  It consists of four components:
 
-1. Customer org: A Salesforce application that generates Platform Events
-1. Listener: A Heroku application that consumes them and dispatches them
-1. Worker: Another Heroku application that receives work from the listener and performs processing on data retrieved from the Customer org
-1. Business org: Another Salesforce application that keeps track of the activity happening in the Customer org and Heroku
+1. [Customer org] ( https://github.com/sfisv-heroku/pe-quickstart-custorg): A Salesforce application that generates Platform Events
+1. [Listener] (https://github.com/sfisv-heroku/pe-quickstart-listener): A Heroku application that consumes events and dispatches them to the worker
+1. [Worker](https://github.com/sfisv-heroku/pe-quickstart-worker): A Heroku application that receives work from the listener and performs processing on data retrieved from the Customer org
+1. [Business org] (https://github.com/sfisv-heroku/pe-quickstart-bizorg): A Salesforce application that keeps track of the activity happening in the Customer org and on Heroku
 
 This is an experimental project, which means that:
 
@@ -14,15 +14,13 @@ This is an experimental project, which means that:
 1. We need your feedback
 1. Code contributions are welcome
 
-For more information, please go to the Salesforce Partner Community and view the Heroku for ISV's Chatter Group
+For more information, please go to the Salesforce Partner Community and view the ["Heroku for ISV's - Quick Start" Chatter Group] (https://sfdc.co/herokuisvquickstart "https://sfdc.co/herokuisvquickstart")
 
 ## Table of Contents
 
 *   Installation
     *   [Installing Heroku Platform Events Quick Start Customer Org using Salesforce DX](#installing-heroku-pe-example-custorg-using-salesforce-dx)
     *   [Installing Heroku Platform Events Quick Start Customer Org using an unlocked package](#installing-pe-example-custorg-using-an-unlocked-package)
-    *   [Getting a Trial of the Heroku Platform Events Quick Start Customer Org ](#getting-trial-pe-example-custorg)
-*   [Additional Resources](#additional-resources)
 
 ## Installation
 
@@ -106,11 +104,3 @@ This is the recommended option for non developers. Use this option if you want t
 1.  Select **Platform Events Example** in the App Launcher.
 
 1.  Click the **Create Events** tab and click the button to begin generating events.
-
-
-## Additional Resources
-
-Git repositories for the other, related, components
-* https://github.com/sfisv-heroku/pe-quickstart-bizorg
-* https://github.com/sfisv-heroku/pe-quickstart-dispatcher
-* https://github.com/sfisv-heroku/pe-quickstart-worker
