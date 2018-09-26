@@ -3,10 +3,10 @@
 
 This example is to demonstrate and serve as a quick start for how large-scale processing can be moved from Salesforce to Heroku.  It consists of four components:
 
-1. [Customer org] ( https://github.com/sfisv-heroku/pe-quickstart-custorg): A Salesforce application that generates Platform Events
-1. [Listener] (https://github.com/sfisv-heroku/pe-quickstart-listener): A Heroku application that consumes events and dispatches them to the worker
+1. [Customer org](https://github.com/sfisv-heroku/pe-quickstart-custorg): A Salesforce application that generates Platform Events
+1. [Listener](https://github.com/sfisv-heroku/pe-quickstart-listener): A Heroku application that consumes events and dispatches them to the worker
 1. [Worker](https://github.com/sfisv-heroku/pe-quickstart-worker): A Heroku application that receives work from the listener and performs processing on data retrieved from the Customer org
-1. [Business org] (https://github.com/sfisv-heroku/pe-quickstart-bizorg): A Salesforce application that keeps track of the activity happening in the Customer org and on Heroku
+1. [Business org](https://github.com/sfisv-heroku/pe-quickstart-bizorg): A Salesforce application that keeps track of the activity happening in the Customer org and on Heroku
 
 This is an experimental project, which means that:
 
@@ -56,9 +56,9 @@ This is the recommended installation option for developers who want to experienc
 
 1.  Change the access policy to permit access to the Connected App
 
-    1.1. Select **Platform Event App** in the App list and click "Edit"
+    1. Select **Platform Event App** in the App list and click "Edit"
 
-    1.1 Change the "Permitted Users" setting to "Admin approved users are pre-authorized" and click Save.
+    2. Change the "Permitted Users" setting to "Admin approved users are pre-authorized" and click Save.
 
 1. Set the Welcome Lightning Page to be the default home page
     
