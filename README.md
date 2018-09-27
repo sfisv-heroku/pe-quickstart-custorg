@@ -10,8 +10,6 @@ This example is to demonstrate and serve as a quick start for how large-scale pr
 
 They must be configured in the listed order, due to dependencies (Customer Org and Listener dependent on Business Org and Worker dependent on Listener)
 
-They must be configured in the listed order, due to dependencies (Customer Org and Listener dependent on Business Org and Worker dependent on Listener)
-
 This is an experimental project, which means that:
 
 1. It's work in progress
