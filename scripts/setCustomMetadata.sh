@@ -1,6 +1,6 @@
 #! /bin/bash
-# Registers a new or modified Salesforce customer org with the business org
-# Uses command line parameter and env variables to populate fields in an Apex file to execute.
+# Sets the credentials for the business org into the protected custom metadata
+# Uses command line parameter and env variables to populate fields in the template file.
 
 # Source the env file to get values for the business org credentials
 . ./.env
