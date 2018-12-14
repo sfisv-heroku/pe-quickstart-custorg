@@ -9,7 +9,7 @@
 ConnectedApplication connApp = [SELECT Id, Name, OptionsAllowAdminApprovedUsersOnly FROM ConnectedApplication WHERE Name = 'Platform Event App'];
 
 // Set the OptionsAllowAdminApprovedUsersOnly to true
-// connApp.OptionsAllowAdminApprovedUsersOnly = true; // Would do this, but field not writable
+// connApp.OptionsAllowAdminApprovedUsersOnly = true; // Would do this, but field not writable yet
 // update connApp;
 
 // Add the PE_Example_Access PermissionSet to the 'Platform Event App' Connected App

@@ -80,13 +80,14 @@ This is the recommended installation option for developers who want to experienc
         ```
         2. Use Visualforce page to register
 
-        Click **Home** to get to the Welcome page and scroll down to get to the Register section, andter the ClientId and click "Register
+        Click **Home** to get to the Welcome page and scroll down to get to the Register section, enter the ClientId and click "Register"
 
 1. Begin generating events
 
-    Click **Home** to get to the Welcome page and click **Create Events" button to begin generating events (Optional: Change the # of events first)
+    Click **Home** to get to the Welcome page and click **Create Events** button to begin generating events (Optional: Change the # of events first)
 
-1.  Modify the protected custom metadata (optional, but required for package installation)
+1.  If the intention is to create your own package, then add the following step ...
+    1. Modify the protected custom metadata (this will be accessed by the postInstall class)
     ```
     ./scripts/setCustomMetadata.sh <clientId>
     ```

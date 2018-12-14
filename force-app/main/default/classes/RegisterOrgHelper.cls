@@ -88,7 +88,6 @@ public with sharing class RegisterOrgHelper
 
        Http h = new Http();
        HttpRequest req = new HttpRequest();
-       //req.setHeader('Content-Type','application/x-www-form-urlencoded');
        req.setBody(authReqBody);
 
        req.setMethod('POST');
@@ -124,8 +123,9 @@ public with sharing class RegisterOrgHelper
     public String registerWithBusinessOrg(String baseUrl, String token, String orgId, CustomerOrgInfoWrapper orgInfo) {
        Http h = new Http();
        HttpRequest req = new HttpRequest();
-       //req.setHeader('Content-Type','application/x-www-form-urlencoded');
        String body = JSON.serialize(orgInfo);
+
+       // Rename fields to match the object field names in the business org.
        body = body.replace('usernameField', 'Username__c').replace('connectionInfoField', 'ConnectionInfo__c');
        System.debug('Post body: ' + body); 
        req.setBody(body);
@@ -178,7 +178,7 @@ public with sharing class RegisterOrgHelper
             instance = org.InstanceName.toLowerCase();
             isSandbox = org.IsSandbox;
         } catch (Exception e) {
-            System.debug('No Organixation record found.');
+            System.debug('No Organization record found.');
             this.custOrgId = UserInfo.getOrganizationId();
             instance = (URL.getSalesforceBaseUrl().getHost()).toLowerCase();
             isSandbox = instance.contains('cs');

@@ -21,7 +21,7 @@ else
 	CUST_CLIENT_ID=$1
 fi
 
-# Substitute field in .apex file
+# Substitute field in template file to create new .apex file
 touch scripts/registerOrg.apex
 sed -e "s/CUST_CLIENT_ID/${CUST_CLIENT_ID}/g" \
 	-e "s/BIZ_USERNAME/${BIZ_USERNAME}/g" \

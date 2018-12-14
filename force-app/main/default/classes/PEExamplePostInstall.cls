@@ -18,8 +18,8 @@
 
     String message = 'Post-install information ... ';
     try {
-        // Get the 'External Processing Example App' Connected Application and add it to the 'PE_Example_Access' permission set
-        List<ConnectedApplication> connApps = [SELECT Id, Name FROM ConnectedApplication WHERE Name = 'Process Externally Example App'];
+        // Get the 'PE Example App' Connected Application and add it to the 'PE_Example_Access' permission set
+        List<ConnectedApplication> connApps = [SELECT Id, Name FROM ConnectedApplication WHERE Name = 'Heroku PE Quickstart App'];
         ConnectedApplication connApp;
         if (connApps.size() == 0) {
              message += 'No Connected app found';       
